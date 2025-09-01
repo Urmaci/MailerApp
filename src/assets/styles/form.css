@@ -1,0 +1,99 @@
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(255, 243, 243);
+  width: 1100px;
+  min-height: 580px;
+  padding: 0 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(178, 178, 178, 0.5);
+}
+
+.form-wrapper .form-image img {
+  width: 450px;
+}
+
+/* form content */
+
+.form-wrapper .form-content h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form-wrapper .form-content form .group {
+  display: flex;
+  gap: 15px;
+}
+
+/* group top & bottom */
+
+.form-content form .group.top input,
+.form-content form .group.bottom input,
+.form-content form .group.bottom textarea {
+  outline: none;
+  border: 1px solid rgb(158, 158, 255);
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-content form .group.top input:hover,
+.form-content form .group.bottom input:hover,
+.form-content form .group.bottom textarea:hover {
+  border: 1px solid rgb(255, 166, 0);
+}
+
+.form-content form .group.top input:focus,
+.form-content form .group.bottom input:focus,
+.form-content form .group.bottom textarea:focus {
+  border: 1px solid rgb(3, 3, 255);
+}
+
+/* group top */
+
+.form-content form .group.top {
+  margin-bottom: 15px;
+}
+
+.form-content form .group.top input {
+  width: 200px;
+}
+
+/* group bottom */
+
+.form-content form .group.bottom {
+  flex-direction: column;
+}
+
+.form-content form .group.bottom textarea {
+  resize: none;
+  height: 200px;
+  padding: 15px 16px;
+}
+
+/* button  */
+
+.form-content form button {
+  display: inline-block;
+  padding: 12px 40px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(158, 158, 255);
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: inherit;
+}
