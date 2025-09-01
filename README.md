@@ -1,24 +1,32 @@
-# mailer-app
+Vue + PHP Mailer Application
 
-## Project setup
-```
-npm install
-```
+This project is a simple application built with a **Vue.js frontend** and a **PHP backend** to send emails.  
+The goal is to allow users to fill out and submit a form through Vue, and then process the email on the backend using PHP.
 
-### Compiles and hot-reloads for development
-```
+
+1# Start the Vue.js frontend
+
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+2# Start the PHP backend
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+php -S localhost:8000 sendMail.php
+
+
+
+├── backend/          # PHP backend (contains sendMail.php)
+├── node_modules/     # Installed dependencies
+├── public/           # Static files
+├── src/              # Vue.js source code
+│   ├── assets/       # Images, styles, etc.
+│   ├── components/   # Vue components
+│   ├── App.vue       # Root Vue component
+│   └── main.js       # Vue entry point
+├── .gitignore
+├── babel.config.js
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── README.md
+└── vue.config.js
