@@ -12,21 +12,3 @@ npm run serve
 2# Start the PHP backend
 
 php -S localhost:8000 sendMail.php
-
-
-
-├── backend/          # PHP backend (contains sendMail.php)
-├── node_modules/     # Installed dependencies
-├── public/           # Static files
-├── src/              # Vue.js source code
-│   ├── assets/       # Images, styles, etc.
-│   ├── components/   # Vue components
-│   ├── App.vue       # Root Vue component
-│   └── main.js       # Vue entry point
-├── .gitignore
-├── babel.config.js
-├── jsconfig.json
-├── package-lock.json
-├── package.json
-├── README.md
-└── vue.config.js
